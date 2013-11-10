@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>coin2me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- Bootstrap -->
+    <link href="third/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <script type="html/exchanger">
+          <tr id="{id}">
+            <td class="exchanger">{exchanger}</td>
+            <td class="last_price">{last_price}</td>
+            <td class="buy_one">{buy_one}</td>
+            <td class="sell_one">{sell_one}</td>
+            <td class="hign_price">{high_price}</td>
+            <td class="low_price">{low_price}</td>
+            <td class="volume">{volume}</td>
+          </tr>
+  </script>
+    <div class="span12">
+      <table id="exchanger-list" class="table table-condensed">
+        <thead>
+          <tr>
+            <th>交易所</th>
+            <th>最近成交价</th>
+            <th>买一价</th>
+            <th>卖一价</th>
+            <th>最高价</th>
+            <th>最低价</th>
+            <th>成交量</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="third/jquery.js"></script>
+    <script src="third/jquery.riot.js"></script>
+    <script src="third/underscore.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="third/bootstrap/js/bootstrap.min.js"></script>
+    <script src="store.js"></script>
+    <script src="exchanger.model.js"></script>
+    <script src="handler.js"></script>
+  </body>
+</html>
